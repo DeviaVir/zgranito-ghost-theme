@@ -1,0 +1,46 @@
+<section class="hero">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="main-wrapper nav">
+        <h1><a href="/" title="Home" class="text-white">Z Granitowego Wzgórza (FCI)</a></h1>
+        <h3 class="text-white subtitle">
+          {{#is "home"}}
+          Hodowla Wilczaków Czechosłowackich
+          {{else}}
+          <span class="pl invisible">Hodowla Wilczaków Czechosłowackich</span>
+          <span class="en invisible">Czechoslovakian Wolfdog Breeder</span>
+          <span class="de invisible">Tschechoslowakische Wolfhunde Zucht</span>
+          <span class="nl invisible">Tsjechoslowaakse Wolfhond Fokker</span>
+          <ul class="lang-selector">
+            <li>
+                <a href="/pl-home/" title="Polish/Polski"><img src="https://assets.wolfdogs.pl/2016/Jul/pl-1469525176807.png" /></a>
+            </li>
+            <li>
+                <a href="/en-home/" title="English"><img src="https://assets.wolfdogs.pl/2016/Jul/en-1469525160748.png" /></a>
+            </li>
+            <li>
+              <a href="/de-home/" title="German/Deutsch"><img src="https://assets.wolfdogs.pl/2016/Jul/de-1469525208244.png" /></a>
+            </li>
+            <li>
+              <a href="/nl-home/" title="Dutch/Nederlands"><img src="https://assets.wolfdogs.pl/2016/Jul/nl-1469525192026.png" /></a>
+            </li>
+          </ul>
+          {{/is}}
+        </h3>
+        {{#is "home"}}
+        {{else}}
+        <hr>
+        <div class="row navigation">
+          <div class="large-8 columns large-centered">
+            <ul class="button-group even-{{ navigation.length }}">
+              {{#foreach navigation}}
+                <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} invisible" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>                
+              {{/foreach}}
+            </ul>
+          </div>
+        </div>
+        {{/is}}
+      </div>
+    </div>
+  </div>
+</section>

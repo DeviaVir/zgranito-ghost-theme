@@ -1,0 +1,75 @@
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="keywords" content="z,granitowego,wzgórza,wolfshond,wilczak,wilczaki,wolfhonden,wolfhond,wolfdogs,puppies,champion,breeder,pup,family,wolfhunde,zu,verkaufen,welpen,wolfshund,wolfhun,meister,züchter,familie,rudel,kampioen,tsjechoslowaakse,czechosłowacki,wilczak,pools,cheap,günstig,gunstig,goedkoop,fci,csv,ceskoslovensky,vlcak,332,poland,polish,lubin,hodowla,moje,psy" />
+
+    <meta property="fb:app_id"             content="922526751190620" />
+    <meta property="og:type"               content="business.business" />
+    <meta property="og:image"              content="https://assets.wolfdogs.pl/2016/Jul/share-1469609448483.jpg" />
+    <meta property="business:contact_data:street_address" content="Miroszowice 17b" /> 
+    <meta property="business:contact_data:locality"       content="Lubin" /> 
+    <meta property="business:contact_data:postal_code"    content="59-300" /> 
+    <meta property="business:contact_data:country_name"   content="Poland" /> 
+    <meta property="place:location:latitude"              content="51.386120" /> 
+    <meta property="place:location:longitude"             content="16.231678" /> 
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}} nav-closed">
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '922526751190620',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    {{navigation}}
+
+    <section class="hero-content">
+
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+
+    </section>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    <script src="{{asset "js/jquery.js"}}"></script>
+    <script src="{{asset "js/foundation.js"}}"></script>
+    <script src="{{asset "js/what-input.js"}}"></script>
+    <script src="{{asset "js/slidesjs.js"}}"></script>
+    <script src="{{asset "js/app.js"}}"></script>
+</body>
+</html>
