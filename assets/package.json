@@ -1,15 +1,18 @@
 {
   "name": "zgranitowegowzgorza",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-libsass-template.git"
+    "url": "https://github.com/DeviaVir/zgranito-ghost-theme.git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
   "dependencies": {
-    "connect-livereload": "^0.5.4",
-    "grunt": "^1.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^1.1.0"
+    "connect-livereload": "^0.6.1",
+    "grunt": "^1.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0"
   }
 }

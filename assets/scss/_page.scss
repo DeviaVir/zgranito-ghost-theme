@@ -87,7 +87,7 @@ h3 {
 	font-size: 24px;
 	color: #111;
 	line-height: 24px;
-	text-align: left;	
+	text-align: left;
 	font-weight: 500;
 	padding-bottom: 10px;
 
@@ -99,7 +99,7 @@ h3 {
 h4 {
 	font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
 	color: #000;
-	font-size: 28px;	
+	font-size: 28px;
 	padding-top: 5px;
 
 	.nav & {
@@ -162,7 +162,7 @@ h4 {
 }
 
 .button-group li .button {
-	border: 0 !important; 
+	border: 0 !important;
 }
 
 .button {
@@ -231,7 +231,7 @@ h4 {
 		padding: 15px 50px 15px 50px;
 		margin-top: 25px;
 		font-size: 0.8125em;
-	}	
+	}
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -242,7 +242,7 @@ h4 {
 		padding: 15px 50px 15px 50px;
 		margin-top: 25px;
 		font-size: 0.8125em;
-	}	
+	}
 }
 
 .radius.right.button:hover {
@@ -375,6 +375,36 @@ table {
     background-size: cover;
     padding: 578px 0 0 0;
 }
+
+#slideshow-wrapper {
+  width: 740px;
+  height: 320px;
+  margin:30px auto;
+}
+
+#slideshow {
+  margin-bottom: 5px;
+  width: 740px;
+  height: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#slideshow img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  margin-right: 15px;
+  display: inline-block;
+  background-color: lightgrey;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+}
+
 
 @media only screen and (max-width: 966px) {
 	.subtitle .lang-selector {
