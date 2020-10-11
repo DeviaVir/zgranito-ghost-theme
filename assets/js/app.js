@@ -1,38 +1,45 @@
 var doc = document.documentElement;
+
 doc.setAttribute('data-useragent', navigator.userAgent);
 
 $(function(){
+
   $(document).foundation();
-  $(".slides").slidesjs({
-    width: '960',
-    height: '600',
-    navigation: false
+
+  $(".slides").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 5000
   });
 
-  $(".dog-slides").slidesjs({
-    width: '400',
-    height: '250',
-    navigation: false,
-    play: {
-      active: true,
-      interval: 5000,
-      auto: false,
-      pauseOnHover: true,
-      swap: true
-    }
+  $(".dog-slides").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 5000
   });
 
-  $(".home-slides").slidesjs({
-    width: '960',
-    height: '600',
-    navigation: false,
-    play: {
-      active: true,
-      interval: 5000,
-      auto: true,
-      pauseOnHover: true,
-      swap: true
-    }
+  $(".home-slides").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 5000
   });
 
   var lang, a, href;
